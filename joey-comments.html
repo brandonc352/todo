@@ -9,19 +9,28 @@
   <body style="background: black; color: white">
     <button id="clearAllstorage">Clear Storage</button>
     <button id="showStorage">Show Storage</button>
-    <button id="creatData">Create Data</button>
-    <button id="creat2Data">Create 2 Data</button>
-    <button id="creat3Data">Create 3 Data</button>
-    <button id="creat4Data">Create 4 Data</button>
-    <button id="appendTest4Data">Amend 4 Data</button>
 
-    <input type="text" class="" name="" id="taskTitle" placeholder="Task" />
-    <input type="date" class="" name="" id="dateDue" placeholder="Task" />
+    <!-- We will use the form to create the data -->
 
-    <button id="addBtn" type="submit">Add</button>
+    <!-- We dont need these, we can dynamically create all data -->
+
+    <!-- inputs and buttons need to be enclosed in a form tag -->
+    <form id="new-todo-form">
+      <input type="text" class="" name="" id="taskTitle" placeholder="Task" />
+      <input type="date" class="" name="" id="dateDue" placeholder="Task" />
+      <button id="addBtn" type="submit">Add</button>
+    </form>
+
     <div id="errorMsg"></div>
     <button id="loadTasks">Load Tasks</button>
+     <!-- Adding this so we can see the data for people
+    You can apply the same for tasks -->
+    <button id="load-people">Load People</button>
     <div id="tasks">No Tasks</div>
+
+    <!-- Adding this so we can see the data for people
+    You can apply the same for tasks -->
+    <ul id="people-list">People: </ul>
 
     <script src="joey-comments.js"></script>
   </body>
